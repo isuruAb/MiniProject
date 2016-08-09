@@ -12,7 +12,6 @@ namespace ThirdYearMiniProject.Models
         public Location()
         {
             Persons = new HashSet<Person>();
-            RdInvoices = new HashSet<RdInvoice>();
         }
 
         public int LocationId { get; set; }
@@ -23,8 +22,5 @@ namespace ThirdYearMiniProject.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Person> Persons { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RdInvoice> RdInvoices { get; set; }
     }
 }

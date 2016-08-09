@@ -1,0 +1,35 @@
+﻿@model ThirdYearMiniProject.Models.RdInvoice
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RdInvoice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Rd.RdId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rd.RdId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RdInvoiceDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RdInvoiceDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RdInvoiceId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

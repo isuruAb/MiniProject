@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ThirdYearMiniProject.Models.RdInvoice>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Rd.RdId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RdInvoiceDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rd.RdId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RdInvoiceDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RdInvoiceId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RdInvoiceId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RdInvoiceId })
+        </td>
+    </tr>
+}
+
+</table>

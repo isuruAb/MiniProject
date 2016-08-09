@@ -10,6 +10,7 @@ using ThirdYearMiniProject.Models;
 
 namespace ThirdYearMiniProject.Controllers
 {
+    [Authorize]
     public class LocationsController : Controller
     {
         private MiniProjectDbContext db = new MiniProjectDbContext();

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ThirdYearMiniProject.Models.RdProduct>
+
+<p>
+    @Html.ActionLink("Create New", "Create", "RdInvoices",null, new { @class = "btn btn-info" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RdInvoice.RdInvoiceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmiNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <form>
+
+                <input type="hidden" value="@item.RdProductId" name="selected" />
+                <input type="submit" value="select" class="btn btn-success" />
+            </form>
+            
+            @*@Html.ActionLink("Select", "Edit", new { id = item.RdProductId })*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RdInvoice.RdInvoiceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmiNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RdProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RdProductId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RdProductId })
+        </td>
+    </tr>
+}
+
+</table>

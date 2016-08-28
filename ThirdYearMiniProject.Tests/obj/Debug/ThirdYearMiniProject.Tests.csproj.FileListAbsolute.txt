@@ -60,3 +60,5 @@ C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdY
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject.Tests\obj\Debug\ThirdYearMiniProject.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject.Tests\obj\Debug\ThirdYearMiniProject.Tests.dll
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject.Tests\obj\Debug\ThirdYearMiniProject.Tests.pdb
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject.Tests\bin\Debug\PagedList.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject.Tests\bin\Debug\PagedList.xml

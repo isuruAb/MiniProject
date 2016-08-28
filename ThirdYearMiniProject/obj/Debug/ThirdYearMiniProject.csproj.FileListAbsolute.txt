@@ -151,3 +151,7 @@ C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdY
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\LumenWorks.Framework.IO.dll
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\LumenWorks.Framework.IO.pdb
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\LumenWorks.Framework.IO.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\PagedList.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\PagedList.Mvc.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\PagedList.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\ThirdYearMiniProject\ThirdYearMiniProject\bin\PagedList.Mvc.xml

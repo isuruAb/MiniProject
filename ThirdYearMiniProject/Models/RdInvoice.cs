@@ -16,16 +16,10 @@ namespace ThirdYearMiniProject.Models
 
         public int RdInvoiceId { get; set; }
 
-        public int RdId { get; set; }
-
-        public int LocationId { get; set; }
+        public int? RdId { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime RdInvoiceDate { get; set; }
-
-        public double RdInvoiceTotal { get; set; }
-
-        public virtual Location Location { get; set; }
+        public DateTime? RdInvoiceDate { get; set; }
 
         public virtual Rd Rd { get; set; }
 

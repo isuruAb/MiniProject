@@ -18,15 +18,13 @@ namespace ThirdYearMiniProject.Models
 
         public int RdInvoiceId { get; set; }
 
-        public int ProductId { get; set; }
-
         [Required]
         [StringLength(50)]
         public string EmiNo { get; set; }
 
-        public double RdProductPrice { get; set; }
-
-        public virtual Product Product { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string ModelName { get; set; }
 
         public virtual RdInvoice RdInvoice { get; set; }
 

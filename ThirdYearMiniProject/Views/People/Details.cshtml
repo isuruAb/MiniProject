@@ -1,0 +1,75 @@
+﻿@model ThirdYearMiniProject.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Location.LocationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location.LocationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Login.Nic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login.Nic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occupid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occupid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

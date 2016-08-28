@@ -21,7 +21,6 @@ namespace ThirdYearMiniProject.Models
         public virtual DbSet<MpsProduct> MpsProducts { get; set; }
         public virtual DbSet<Mpss> Mpsses { get; set; }
         public virtual DbSet<Person> Persons { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<RdInvoice> RdInvoices { get; set; }
         public virtual DbSet<RdProduct> RdProducts { get; set; }
         public virtual DbSet<Rd> Rds { get; set; }
@@ -56,11 +55,6 @@ namespace ThirdYearMiniProject.Models
 
             modelBuilder.Entity<Location>()
                 .HasMany(e => e.Persons)
-                .WithRequired(e => e.Location)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Location>()
-                .HasMany(e => e.RdInvoices)
                 .WithRequired(e => e.Location)
                 .WillCascadeOnDelete(false);
 
@@ -131,15 +125,6 @@ namespace ThirdYearMiniProject.Models
                 .WithRequired(e => e.Person)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Product>()
-                .Property(e => e.ProductName)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .HasMany(e => e.RdProducts)
-                .WithRequired(e => e.Product)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<RdInvoice>()
                 .HasMany(e => e.RdProducts)
                 .WithRequired(e => e.RdInvoice)
@@ -150,13 +135,12 @@ namespace ThirdYearMiniProject.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<RdProduct>()
+                .Property(e => e.ModelName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<RdProduct>()
                 .HasMany(e => e.SrProducts)
                 .WithRequired(e => e.RdProduct)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Rd>()
-                .HasMany(e => e.RdInvoices)
-                .WithRequired(e => e.Rd)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Rd>()

@@ -1,0 +1,25 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model ThirdYearMiniProject.Models.SrInvoiceViewModel
+@{
+    ViewBag.Title = "Sr Invoice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Invoice to SR</h2>
+
+@Html.Partial("_RdProductList", Model.rdProductList)
+@Html.PagedListPager(Model.rdProductList,page => Url.Action("Index", "SrInvoices", new { page }))
+
+
+@Html.Partial("_SelectedRdProducts", Model.selectedRdProductList)
+@Html.PagedListPager(Model.selectedRdProductList, page_two => Url.Action("Index", "SrInvoices", new { page_two }))
+@using (Html.BeginForm("AssignToSr", "SrInvoices", FormMethod.Post, null))
+{
+    @Html.HiddenFor(model => model.selectedRdProductList)
+
+@Html.DropDownList("SrId", new SelectList(@ViewBag.SrDropDown, "Key", "Value"), htmlAttributes: new { @class = "form-control" })
+@Html.ValidationMessageFor(model => model.rdNames, "", new { @class = "text-danger" })
+    <br />
+
+<input type="submit" value="submit" class="btn btn-success" />
+}
